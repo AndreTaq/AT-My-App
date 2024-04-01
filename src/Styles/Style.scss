@@ -42,4 +42,15 @@
     }
 }
 
+// About Page
+.about {
+    @include titleStyle();
+    button{
+        @include buttonStyle();
+    }
+    img{
+        @include imgStyle(350, 350);
+    }
+}
+
 

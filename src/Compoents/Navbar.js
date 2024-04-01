@@ -1,15 +1,15 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../css/Style.css";
 
 function Navbar() {
   return (
     <div className="navbar">
       <div className="links">
-        <a href="/home">Home</a>
-        <a href="/about">About</a>
-        <a href="/profile">Pofile</a>
-        <a href="/contact">Contact</a>
+        <Link className="link" to="/">Home</Link>
+        <Link className="link" to="/about">About</Link>
+        {/* <Link className="link" to="">Pofile</Link> */}
+        {/* <Link className="link" to="">Contact</Link> */}
       </div>
     </div>
   );

@@ -49,4 +49,36 @@
 }
 .mainPage img:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about h1 {
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+}
+.about button {
+  background-color: green;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 25px;
+}
+.about img {
+  width: 350px;
+  height: 350px;
+  margin: 50px;
+  border-radius: 25px;
+  padding: 10px;
+  transition: 0.5s;
+}
+.about img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }/*# sourceMappingURL=Style.css.map */

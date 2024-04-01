@@ -1,13 +1,18 @@
 import MainPage from "./Compoents/MainPage";
 import About from "./Compoents/About";
-import Navbar from "./Compoents/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <MainPage />
-      <About />
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
+      
     </div>
   );
 }
