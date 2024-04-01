@@ -31,7 +31,7 @@
   color: red;
 }
 .mainPage button {
-  background-color: green;
+  background-color: rgb(75, 219, 75);
   border: none;
   color: #fff;
   padding: 15px 32px;
@@ -63,16 +63,21 @@
   color: red;
 }
 .about button {
-  background-color: green;
-  border: none;
-  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
   padding: 15px 32px;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 25px;
+  border-radius: 50px;
+  background-color: rgb(100, 156, 228);
+  color: #444444;
+}
+.about button:hover {
+  color: #fff;
+  background-color: #eca0ec;
 }
 .about img {
-  width: 350px;
+  width: 850px;
   height: 350px;
   margin: 50px;
   border-radius: 25px;

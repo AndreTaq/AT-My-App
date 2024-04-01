@@ -34,12 +34,13 @@
       0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
-
-// Functions
-@function text-color($color) {
-  @if (lightness($color) > 50) {
-    @return #075da3;
-  } @else {
-    @return #8b2fc9;
-  }
+// about page btn
+@mixin btn ($bg-color: rgb(100, 156, 228)){
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 15px 32px;
+  border-radius: 50px;
+  background-color: $bg-color;
 }

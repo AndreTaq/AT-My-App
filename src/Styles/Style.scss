@@ -1,5 +1,6 @@
-@import "../Variables/Variables.scss";
-@import "../Variables/Utilities.scss";
+@import "functions";
+@import "variables";
+@import "utilities";
 
 // Navbar
 .navbar {
@@ -46,10 +47,15 @@
 .about {
     @include titleStyle();
     button{
-        @include buttonStyle();
+        @include btn();
+        color: light-comp($blackColor);
+        &:hover{
+            color: $whiteColor;
+            background-color: light-comp($greenColor);
+        }
     }
     img{
-        @include imgStyle(350, 350);
+        @include imgStyle(850, 350);
     }
 }
 
