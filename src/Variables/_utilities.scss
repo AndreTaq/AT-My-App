@@ -1,0 +1,21 @@
+@mixin imgStyle($width, $height) {
+    width: $width + px;
+    height: $height + px;
+    margin: 50px;
+    border-radius: 25px;
+    padding: 10px;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+
+// Functions
+@function text-color ($color) {
+    @if (lightness($color) > 50) {
+      @return #075da3;
+    } @else {
+      @return #8b2fc9;
+    }
+  }

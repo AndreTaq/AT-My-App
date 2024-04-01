@@ -1,0 +1,21 @@
+// Colors
+$blackColor: #111111;
+$whiteColor: #fff;
+$redColor: red;
+$greenColor: green;
+
+// Fonts
+$titleFont: Arial, Helvetica, sans-serif;
+$bodyFont: "Times New Roman", Times, serif;
+
+// Mixins
+@mixin buttonStyle {
+  background-color: $greenColor;
+  border: none;
+  color: $whiteColor;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 25px;
+}
+
